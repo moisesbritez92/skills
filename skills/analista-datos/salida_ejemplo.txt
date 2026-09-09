@@ -1,0 +1,73 @@
+
+========================================================================
+  ANÁLISIS DE PESO
+========================================================================
+  Diseño declarado en el protocolo: dbca
+  Unidad experimental: una jaula con 5 animales
+  Modelo previsto: peso ~ tratamiento + bloque
+
+========================================================================
+  TABLA DE ANÁLISIS DE VARIANZA
+========================================================================
+  Fuente                    gl            SC           CM        F          p
+  ----------------------------------------------------------------------
+  tratamiento                3       2810.85       936.95    13,23    < 0,001 *
+  bloque                     4        547.94       136.98     1,93     0,1694 ns
+  Error experimental        12        850.03        70.84                    
+  ----------------------------------------------------------------------
+  Media general: 221,88     Coeficiente de variación: 3,8 %
+  Nivel de significancia: 0,05
+
+========================================================================
+  VERIFICACIÓN DE SUPUESTOS (sobre los residuos del modelo)
+========================================================================
+  Normalidad de residuos, Shapiro Wilk: W = 0,960, p = 0,5501
+    Sin evidencia contra la normalidad.
+  Homogeneidad de varianzas, Levene: F = 1,701, p = 0,2069
+    Varianzas compatibles con la homogeneidad.
+
+  Gráfico de supuestos guardado en res2_supuestos.png
+
+========================================================================
+  LECTURA DEL RESULTADO
+========================================================================
+  tratamiento: efecto significativo (F(3, 12) = 13,23, p < 0,001, eta cuadrado parcial = 0,768).
+
+  El efecto de bloque es control del ensayo, no un hallazgo. No lo
+  reportes como resultado ni lo discutas.
+
+========================================================================
+  MEDIAS, TRATAMIENTO, peso (g)
+========================================================================
+  Tratamiento            n       Media         DE         EE   Letras
+  --------------------------------------------------------------------
+  T3                     5      239.85      11.69       5.23   a
+  T2                     5      224.45       5.19       2.32   ab
+  T1                     5      214.94       4.26       1.91   bc
+  T0                     5      208.30      12.95       5.79   c
+  --------------------------------------------------------------------
+  Medias con letra común no difieren según la prueba de Tukey (alfa = 0,05).
+  DE es el desvío estándar y EE el error estándar de la media.
+
+========================================================================
+  COMPARACIONES POR PARES, PRUEBA DE TUKEY, TRATAMIENTO
+========================================================================
+  Comparación                  Diferencia   IC inferior   IC superior          p
+  ------------------------------------------------------------------------------
+  T0 vs T1                          -6.64        -22.45          9.16     0,6102  ns
+  T0 vs T2                         -16.15        -31.96         -0.35     0,0446  *
+  T0 vs T3                         -31.55        -47.36        -15.75    < 0,001  *
+  T1 vs T2                          -9.51        -25.31          6.30     0,3259  ns
+  T1 vs T3                         -24.91        -40.71         -9.11     0,0026  *
+  T2 vs T3                         -15.40        -31.20          0.40     0,0569  ns
+  ------------------------------------------------------------------------------
+  El intervalo de confianza es el de la diferencia entre medias.
+  Una diferencia puede ser significativa y aun así carecer de
+  relevancia práctica. Juzgá la magnitud, no sólo el valor p.
+
+  Figura de medias guardada en res2_medias.png
+
+  Tablas guardadas con el prefijo 'res2_'.
+  Software: Python 3.12.3, statsmodels 0.15.0, scipy 1.17.1, pandas 3.0.2.
+  Anotá estas versiones en la sección de análisis estadístico.
+
