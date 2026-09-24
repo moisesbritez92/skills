@@ -1,6 +1,6 @@
 ---
 name: redactor-tesis
-description: Redacta y revisa texto académico (TFM, TFG, tesis, papers, memorias) aplicando un estilo impersonal, claro y sobrio, y comprobando los aspectos formales: ortografía, estructura en capítulos y epígrafes, tablas y figuras, citas y referencias, notas al pie y presentación. Úsala al escribir un capítulo, reescribir un borrador, revisar redacción o preparar la entrega de un trabajo académico.
+description: "Redacta y revisa texto académico (TFM, TFG, tesis, papers, memorias) aplicando un estilo impersonal, claro y sobrio, y comprobando los aspectos formales: ortografía, estructura en capítulos y epígrafes, tablas y figuras, citas y referencias, notas al pie y presentación. Úsala al escribir un capítulo, reescribir un borrador, revisar redacción o preparar la entrega de un trabajo académico."
 ---
 
 # Redactor de tesis
@@ -79,6 +79,30 @@ Ejemplos de reescritura en `references/ejemplos-reescritura.md`.
 
 Detalle de formatos de cita y plantillas en `references/formato-y-citas.md`.
 
+## Resumen, abstract y palabras clave
+
+Las instrucciones para autores de la revista o institución prevalecen sobre estas pautas:
+verificá idioma, extensión, estructura, número de palabras clave y formato antes de redactar.
+
+- **Resumen y abstract.** Redactar uno o dos párrafos, salvo que la normativa indique otra
+  extensión. Deben permitir comprender el problema, objetivo, método, resultado principal y
+  conclusión sin leer el documento completo. Exponer desde el inicio el hallazgo o aporte más
+  relevante; no reservarlo para la última frase. Incorporar de forma natural los términos que
+  describen el trabajo, con lenguaje claro para lectores de áreas próximas. Limitar la jerga y
+  explicar los tecnicismos imprescindibles. El abstract debe reflejar con fidelidad el resumen,
+  no ser una traducción libre que cambie alcance, cifras o conclusiones.
+- **Palabras clave.** Seleccionar normalmente entre tres y cinco, salvo indicación distinta.
+  Preferir métodos, variables, autores, poblaciones, técnicas o subdisciplinas específicas del
+  trabajo. Evitar términos demasiado amplios, como «filosofía» o «filología», que aportan poca
+  capacidad de descubrimiento. Revisar los tesauros, índices o listas de términos habituales de
+  la disciplina cuando existan. Las palabras clave deben aparecer de forma natural en el título,
+  resumen o abstract, sin repetirlas artificialmente.
+- **Descubrimiento.** El título, resumen, abstract y palabras clave se indexan en buscadores y
+  bases como Google Scholar, PubMed, Web of Science y EBSCO. Elegir términos precisos mejora que
+  el trabajo pueda encontrarse, leerse y citarse, incluso por quienes no accedan a la revista.
+  No incluir afirmaciones, resultados ni referencias que no aparezcan o no estén respaldados en
+  el cuerpo del manuscrito.
+
 ## Si el trabajo se redacta en LaTeX
 
 Comandos, entradas `.bib` y errores frecuentes en `references/latex-ieee.md`. Lo esencial:
@@ -100,6 +124,9 @@ Comandos, entradas `.bib` y errores frecuentes en `references/latex-ieee.md`. Lo
 - [ ] Sin muletillas ni relleno; sin metáforas ni eufemismos
 - [ ] Ninguna raya (`—`) en el texto; incisos con comas o paréntesis
 - [ ] Siglas desarrolladas y términos definidos en su primera aparición
+- [ ] Resumen y abstract incluyen objetivo, método, resultado principal y conclusión, y respetan
+  las instrucciones de la revista o institución
+- [ ] Tres a cinco palabras clave específicas, salvo que la normativa establezca otra cantidad
 - [ ] Tablas y figuras numeradas, tituladas y citadas en el texto
 - [ ] Citas IEEE `[n]` correlativas por orden de aparición y bibliografía en ese orden
 - [ ] Todas las citas con entrada en bibliografía, y a la inversa
